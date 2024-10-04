@@ -1,0 +1,16 @@
+rest-client:
+  base-url: ${BASE_URL_ADMIN:http://app.catalog.admin:8091}
+  keycloak:
+    read-timeout: 1_000
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration
+server:
+  port: 8080
+  undertow:
+    threads:
+      worker: 10
+      io: 2

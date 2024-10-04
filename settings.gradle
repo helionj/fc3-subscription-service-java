@@ -1,0 +1,6 @@
+rootProject.name = 'fc3-subscription-service'
+include 'domain'
+include 'application'
+include 'infrastructure'
+include 'infrastructure'
+

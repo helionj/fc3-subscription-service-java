@@ -1,0 +1,14 @@
+keycloak:
+  client-id: fc3-app
+  client-secret: secret
+  realm: test
+  host: "http://localhost:${wiremock.server.port:8001}"
+
+
+rest-client:
+  base-url: "http://localhost:${wiremock.server.port:8001}"
+  keycloak:
+    read-timeout: 2000
+
+
+
